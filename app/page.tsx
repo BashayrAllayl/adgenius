@@ -301,7 +301,8 @@ export default function Page() {
 5. 🎨 اقتراح المحتوى البصري المناسب`;
 
     try {
-      const res = await fetch("https://api/generate", {
+      
+      const res = await fetch("/api/generate", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
